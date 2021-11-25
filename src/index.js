@@ -18,7 +18,7 @@ ReactDOM.render(
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/BenjaminLesne_11_23112021/" element={<Home />} />
+        <Route path="/BenjaminLesne_11_23112021" element={<Home />} />
 
         <Route path="/BenjaminLesne_11_23112021/about" element={<About />} />
         <Route
