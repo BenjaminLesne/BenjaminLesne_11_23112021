@@ -18,11 +18,11 @@ ReactDOM.render(
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route index element={<Home />} />
+        <Route path="/BenjaminLesne_11_23112021/" element={<Home />} />
 
-        <Route path="about" element={<About />} />
+        <Route path="/BenjaminLesne_11_23112021/about" element={<About />} />
         <Route
-          path="habitation-information"
+          path="/BenjaminLesne_11_23112021/habitation-information"
           element={<HabitationInformation />}
         />
 
