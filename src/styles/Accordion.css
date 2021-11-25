@@ -1,0 +1,57 @@
+.accordion__item {
+  max-width: 1023px;
+  margin: 31px auto;
+  font-size: 24px;
+
+  border-radius: 0 0 5px 5px;
+}
+
+.accordion__title {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 9px 18px;
+  background-color: #ff6060;
+  border-radius: 5px;
+}
+
+.accordion__content {
+  color: #ff6060;
+  background-color: #f7f7f7;
+  padding: 36px 27px 18px 18px;
+  font-weight: 400;
+}
+
+.accordion__open {
+  transform: rotate(180deg);
+}
+
+/* habitation page modifier below */
+
+.accordion__item--habitation-page-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6%;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.accordion__item--habitation-page {
+  margin: 25px 0 0 0;
+}
+
+.accordion__item--habitation-page .accordion__title {
+  border-radius: 10px;
+}
+.accordion__item--habitation-page .accordion__content {
+  border-radius: 0 0 10px 10px;
+}
+
+.accordion__content li {
+  list-style: none;
+}
+
+@media screen and (max-width: 800px) {
+  .accordion__item--habitation-page-wrapper {
+    grid-template-columns: 1fr;
+  }
+}

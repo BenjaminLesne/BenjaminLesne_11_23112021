@@ -1,0 +1,41 @@
+.pageNotFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ff6060;
+  text-align: center;
+}
+
+.pageNotFound__404 {
+  font-size: 288px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.pageNotFound__error-message {
+  font-size: 36px;
+}
+
+.pageNotFound__link-to-home {
+  font-size: 18px;
+  color: #ff6060;
+  text-decoration: underline;
+  margin-top: 10%;
+}
+
+@media screen and (max-width: 800px) {
+  .pageNotFound {
+    margin-top: 25%;
+  }
+
+  .pageNotFound__404 {
+    font-size: 96px;
+  }
+  .pageNotFound__error-message {
+    font-size: 18px;
+  }
+  .pageNotFound__link-to-home {
+    font-size: 14px;
+  }
+}

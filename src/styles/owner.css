@@ -1,0 +1,28 @@
+.owner {
+  display: flex;
+}
+
+.owner__names {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  color: #ff6060;
+  font-size: 130%;
+}
+
+.owner__first-name,
+.owner__last-name {
+  margin-right: 10px;
+}
+
+.owner__first-name {
+  margin-bottom: 5px;
+}
+
+.owner__profile-picture {
+  border-radius: 100px;
+  height: 64px;
+  width: 64px;
+  background: #c4c4c4;
+}

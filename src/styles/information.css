@@ -1,0 +1,41 @@
+.information__place-and-owner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.information__titles {
+  display: flex;
+  flex-direction: column;
+}
+
+.information__name {
+  margin: 0;
+  font-size: 250%;
+  color: #ff6060;
+}
+
+.information__location {
+  margin-top: 15px;
+  color: #ff6060;
+}
+
+.information__resume {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 0;
+}
+
+@media screen and (max-width: 800px) {
+  .information__resume {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+  }
+  .information__name {
+    font-size: 200%;
+  }
+  .information__location {
+    font-size: 150%;
+  }
+}

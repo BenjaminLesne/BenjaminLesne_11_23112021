@@ -1,0 +1,12 @@
+.owner-and-review {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 800px) {
+  .owner-and-review {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}

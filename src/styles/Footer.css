@@ -1,0 +1,26 @@
+.footer {
+  background-color: black;
+  color: white;
+  margin: auto;
+  width: 100vw;
+  height: 209px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.footer path {
+  fill: white;
+}
+
+.footer__logoWrapper {
+  height: 40px;
+  width: 122px;
+}
+
+.footer__copyrights {
+  margin-top: 30px;
+}
