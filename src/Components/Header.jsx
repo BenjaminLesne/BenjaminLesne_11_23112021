@@ -10,7 +10,11 @@ const Header = () => {
       activePage: false,
       path: "/BenjaminLesne_11_23112021/",
     },
-    about: { value: "A Propos", activePage: false, path: "about" },
+    about: {
+      value: "A Propos",
+      activePage: false,
+      path: "/BenjaminLesne_11_23112021/about",
+    },
   };
 
   //check url to define which nav link should be displayed as active
