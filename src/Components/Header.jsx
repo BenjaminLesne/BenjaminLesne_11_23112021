@@ -5,17 +5,22 @@ import { Link, useMatch, useResolvedPath } from "react-router-dom";
 const Header = () => {
   //all nav links and their info
   const navItems = {
-    home: { value: "Accueil", activePage: false, path: "" },
+    home: {
+      value: "Accueil",
+      activePage: false,
+      path: "/BenjaminLesne_11_23112021/",
+    },
     about: { value: "A Propos", activePage: false, path: "about" },
   };
 
   //check url to define which nav link should be displayed as active
   switch (true) {
-    case window.location.pathname === "/":
+    case window.location.pathname === "/BenjaminLesne_11_23112021/":
       navItems.home.activePage = true;
       break;
 
-    case window.location.pathname.toLowerCase() === "/about":
+    case window.location.pathname.toLowerCase() ===
+      "/BenjaminLesne_11_23112021/about":
       navItems.about.activePage = true;
       break;
 
