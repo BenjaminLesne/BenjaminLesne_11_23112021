@@ -5,7 +5,7 @@ const Card = (props) => {
   const { img, title } = props;
 
   return (
-    <Link to="/habitation-information">
+    <Link to="/BenjaminLesne_11_23112021/habitation-information">
       <article className="card">
         <div className="card__imgWrapper">
           <div className="card__img" href={img}></div>
