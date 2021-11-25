@@ -56,8 +56,8 @@ const Header = () => {
     for (const navLink in navItems) {
       myHTML.push(
         <CustomLink
-          to={`/${navItems[navLink].path.toLowerCase()}`}
-          key={`/${navItems[navLink].path.toLowerCase()}`}
+          to={`${navItems[navLink].path.toLowerCase()}`}
+          key={`${navItems[navLink].path.toLowerCase()}`}
           myClassName={
             "header__link" +
             (navItems[navLink].activePage ? " header__link--active" : "")
