@@ -9,6 +9,11 @@
   align-items: flex-end;
   color: #ff6060;
   font-size: 130%;
+  margin-right: 10px;
+  line-height: 150%;
+  width: 1px;
+  word-spacing: 100%;
+  text-align: right;
 }
 
 .owner__first-name,
@@ -25,4 +30,10 @@
   height: 64px;
   width: 64px;
   background: #c4c4c4;
+}
+
+@media screen and (max-width: 800px) {
+  .owner__names {
+    font-size: initial;
+  }
 }

@@ -1,30 +1,49 @@
 import Card from "./Card";
 import "../styles/ProductLayout.css";
+import "../styles/ProductLayout.css";
 
-const productData = [
-  { img: "#", title: "Titre de la location" },
-  { img: "#", title: "Titre de la location" },
-  { img: "#", title: "Titre de la location" },
-  { img: "#", title: "Titre de la location" },
-  { img: "#", title: "Titre de la location" },
-  { img: "#", title: "Titre de la location" },
-  { img: "#", title: "Titre de la location" },
-  { img: "#", title: "Titre de la location" },
-  { img: "#", title: "Titre de la location" },
-];
+import React from "react";
 
-const ProductLayout = () => {
-  return (
-    <div className="productLayout">
-      {productData.map((productCard, index) => (
-        <Card
-          key={"product-" + index}
-          img={productCard.img}
-          title={productCard.title}
-        />
-      ))}
-    </div>
-  );
-};
+class ProductLayout extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isLoaded: false,
+      productData: [],
+    };
+  }
+
+  componentDidMount() {
+    fetch("./logements.json")
+      .then((res) => res.json())
+      .then(
+        (result) => {
+          console.log(result);
+          this.setState({ isLoaded: true });
+
+          this.setState({ productData: result });
+        },
+        (error) => {
+          this.setState({ isLoaded: true });
+          console.log(error);
+        }
+      );
+  }
+
+  render() {
+    return (
+      <div className="productLayout">
+        {this.state.productData.map((productCard, index) => (
+          <Card
+            key={productCard.id}
+            img={productCard.cover}
+            title={productCard.title}
+            dataIndex={index}
+          />
+        ))}
+      </div>
+    );
+  }
+}
 
 export default ProductLayout;

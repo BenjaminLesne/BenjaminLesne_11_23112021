@@ -22,7 +22,7 @@ ReactDOM.render(
 
         <Route path="/BenjaminLesne_11_23112021/about" element={<About />} />
         <Route
-          path="/BenjaminLesne_11_23112021/habitation-information"
+          path="/BenjaminLesne_11_23112021/habitation-information/:habitationIndex"
           element={<HabitationInformation />}
         />
 
