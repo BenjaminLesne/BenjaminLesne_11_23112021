@@ -11,9 +11,6 @@ class Accordion extends React.Component {
   render() {
     const { title, content, version, children } = this.props;
 
-    // const Accordion = ({ title, content, version, children }) => {
-    //   const [isActive, setIsActive] = useState(false);
-
     return (
       <div
         className={
